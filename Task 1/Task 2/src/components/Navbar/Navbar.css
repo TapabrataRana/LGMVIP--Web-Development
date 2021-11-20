@@ -1,0 +1,62 @@
+.NavbarItems {
+  background: linear-gradient(to right, rgb(188, 206, 86), rgb(156, 198, 233));
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 60%;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: xx-large;
+  text-shadow: 2px 1px 2px black;
+}
+
+.nav-button {
+  background-image: linear-gradient(
+    to right,
+    #d31027 0%,
+    #0f056e 51%,
+    #d31027 100%
+  );
+}
+.nav-button {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.nav-button:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .NavbarItems {
+    position: relative;
+    grid-gap: 10%;
+    display: flex;
+  }
+  .nav-button {
+    width: 50%;
+    height: 100%;
+  }
+  .navbar-logo {
+    margin-top: 10px;
+    font-size: large;
+  }
+}
